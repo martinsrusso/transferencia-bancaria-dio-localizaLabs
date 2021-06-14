@@ -1,0 +1,16 @@
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.csprojAssemblyReference.cache
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.AssemblyInfoInputs.cache
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.AssemblyInfo.cs
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.csproj.CoreCompileInputs.cache
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\bin\Debug\net5.0\transferencia-bancaria-localizaLabs.exe
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\bin\Debug\net5.0\transferencia-bancaria-localizaLabs.deps.json
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\bin\Debug\net5.0\transferencia-bancaria-localizaLabs.runtimeconfig.json
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\bin\Debug\net5.0\transferencia-bancaria-localizaLabs.runtimeconfig.dev.json
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\bin\Debug\net5.0\transferencia-bancaria-localizaLabs.dll
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\bin\Debug\net5.0\ref\transferencia-bancaria-localizaLabs.dll
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\bin\Debug\net5.0\transferencia-bancaria-localizaLabs.pdb
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.dll
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\ref\transferencia-bancaria-localizaLabs.dll
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.pdb
+C:\Downloads\Localiza - DIO\transferencia-bancaria-dio-localizaLabs\obj\Debug\net5.0\transferencia-bancaria-localizaLabs.genruntimeconfig.cache

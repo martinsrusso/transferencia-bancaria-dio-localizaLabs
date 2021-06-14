@@ -1,8 +1,8 @@
-namespace transferencia_bancaria_dio
+namespace transferencia_bancaria_localizaLabs
 {
-    public class TipoConta
+    public enum TipoConta
     {
-        PessoaFisica = 1;
-        PessoaJuridica = 2;
+        PessoaFisica = 1,
+        PessoaJuridica = 2
     }
 }

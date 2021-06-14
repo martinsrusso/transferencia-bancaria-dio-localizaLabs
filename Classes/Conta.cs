@@ -1,6 +1,6 @@
 using System;
 
-namespace transferencia_bancaria_dio
+namespace transferencia_bancaria_localizaLabs
 {
     public class Conta
     {

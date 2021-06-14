@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using transferencia_bancaria_dio_localizaLabs.Classes;
 
-namespace transferencia_bancaria_dio
+namespace transferencia_bancaria_localizaLabs
 {
     class Program
     {
         static List<Conta> listContas = new List<Conta>();
+		static StatusConta statusConta = new StatusConta();
         static void Main(string[] args)
         {
             string opcaoUsuario = ObterOpcaoUsuario();
@@ -46,38 +48,56 @@ namespace transferencia_bancaria_dio
 
         private static void Depositar()
 		{
-			Console.Write("Digite o número da conta: ");
-			int indiceConta = int.Parse(Console.ReadLine());
+			if (obterStatusConta(5) == false){
+				return;
+			}
+			else{
 
-			Console.Write("Digite o valor a ser depositado: ");
-			double valorDeposito = double.Parse(Console.ReadLine());
+				Console.Write("Digite o número da conta: ");
+				int indiceConta = int.Parse(Console.ReadLine());
 
-            listContas[indiceConta].Depositar(valorDeposito);
+				Console.Write("Digite o valor a ser depositado: ");
+				double valorDeposito = double.Parse(Console.ReadLine());
+
+				listContas[indiceConta].Depositar(valorDeposito);
+			}			
 		}
 
 		private static void Sacar()
 		{
-			Console.Write("Digite o número da conta: ");
-			int indiceConta = int.Parse(Console.ReadLine());
+			if (obterStatusConta(4) == false){
+				return;
+			}
+			else{
 
-			Console.Write("Digite o valor a ser sacado: ");
-			double valorSaque = double.Parse(Console.ReadLine());
+				Console.Write("Digite o número da conta: ");
+				int indiceConta = int.Parse(Console.ReadLine());
 
-            listContas[indiceConta].Sacar(valorSaque);
+				Console.Write("Digite o valor a ser sacado: ");
+				double valorSaque = double.Parse(Console.ReadLine());
+
+				listContas[indiceConta].Sacar(valorSaque);
+			}
 		}
 
 		private static void Transferir()
 		{
-			Console.Write("Digite o número da conta de origem: ");
-			int indiceContaOrigem = int.Parse(Console.ReadLine());
+			if (obterStatusConta(3) == false){
+				return;
+			}
+			else{
+				Console.Write("Digite o número da conta de origem: ");
+				int indiceContaOrigem = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite o número da conta de destino: ");
-			int indiceContaDestino = int.Parse(Console.ReadLine());
+				Console.Write("Digite o número da conta de destino: ");
+				int indiceContaDestino = int.Parse(Console.ReadLine());
 
-			Console.Write("Digite o valor a ser transferido: ");
-			double valorTransferencia = double.Parse(Console.ReadLine());
+				Console.Write("Digite o valor a ser transferido: ");
+				double valorTransferencia = double.Parse(Console.ReadLine());
 
-            listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);
+				listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);
+			}
+			
 		}
 
 		private static void InserirConta()
@@ -96,7 +116,7 @@ namespace transferencia_bancaria_dio
 			Console.Write("Digite o crédito: ");
 			double entradaCredito = double.Parse(Console.ReadLine());
 
-			Conta novaConta = new Conta(tipoConta: (TipoConta)entradaTipoConta,
+			Conta novaConta = new Conta(tipoConta: (TipoConta) entradaTipoConta,
 										saldo: entradaSaldo,
 										credito: entradaCredito,
 										nome: entradaNome);
@@ -125,7 +145,7 @@ namespace transferencia_bancaria_dio
 		private static string ObterOpcaoUsuario()
 		{
 			Console.WriteLine();
-			Console.WriteLine("Plei Bank a seu dispor!!!");
+			Console.WriteLine("Leleko Personal Banking a seu dispor!!!");
 			Console.WriteLine("Informe a opção desejada:");
 
 			Console.WriteLine("1- Listar contas");
@@ -140,6 +160,10 @@ namespace transferencia_bancaria_dio
 			string opcaoUsuario = Console.ReadLine().ToUpper();
 			Console.WriteLine();
 			return opcaoUsuario;
+		}
+
+		private static bool obterStatusConta(int operacao){
+			return statusConta.ObterStatus(operacao, listContas);
 		}
     }
 }
